@@ -8,7 +8,18 @@ Let's fix that freaking snow production ASAP
 
 Elixir was chosen as an opportunity to learn functional programming
 
+### Initiating new challenge
+
+There is a script called `init.exs` which can be executed to create a folder and templates for a new challenge, as follows:
+
+```bash
+elixir init.exs
+#then just type the number of the day for the challenge
+```
+
 ### Useful snipets
+
+Reading a file per line
 
 ```elixir
 File.stream!("file.txt")
