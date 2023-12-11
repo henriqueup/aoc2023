@@ -119,6 +119,8 @@ defmodule Solution do
   end
 
   def smart_way(original_seed_range, maps) do
+    # credits to midouest at https://github.com/midouest/advent-of-code-2023/blob/main/notebooks/day05.livemd
+
     Enum.reduce(maps, [original_seed_range], fn map, seed_ranges ->
       Enum.reduce(map, {[], seed_ranges}, fn mapping, {curr_mapped, curr_unmapped} ->
         {new_mapped, new_unmapped} =
